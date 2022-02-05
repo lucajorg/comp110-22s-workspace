@@ -1,8 +1,6 @@
 """Ex02 One shot Wordle."""
 __author__ = "730484794"
 
-from platform import python_branch
-
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
@@ -21,7 +19,7 @@ while i < len(secret):
     if guess[i] == secret[i]:
         emoji += GREEN_BOX
     else:
-        while anywhere == False and j < len(secret):
+        while not anywhere and j < len(secret):
             if guess[i] == secret[j]:
                 anywhere = True
             j += 1
@@ -37,4 +35,4 @@ print(emoji)
 if guess == secret:
     print("Woo! You got it!")
 else:
-    print("Not quite. Try again soon!")
+    print("Not quite. Play again soon!")
