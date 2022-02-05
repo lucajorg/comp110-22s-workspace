@@ -1,4 +1,4 @@
-"""ex03 - Structured Wordle"""
+"""Ex03 - Structured Wordle."""
 
 __author__ = "730484794"
 
@@ -65,12 +65,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-    
-
-
-
-
-
-
-
