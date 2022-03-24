@@ -2,14 +2,13 @@
 
 __author__ = "730484794"
 
-from mimetypes import guess_all_extensions
-
-
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
+
+
 def contains_char(word: str, char: str) -> bool:
-    """Returns true if single character string char is found in word"""
+    """Returns true if single character string char is found in word."""
     assert len(char) == 1
     i: int = 0
     while i < len(word):
@@ -20,7 +19,7 @@ def contains_char(word: str, char: str) -> bool:
     
 
 def emojified(guess: str, secret: str) -> str:
-    """Returns a string of emoji noting the accuracy of guess"""
+    """Returns a string of emoji noting the accuracy of guess."""
     assert len(guess) == len(secret)
     i: int = 0
     emoji: str = ""
@@ -36,7 +35,7 @@ def emojified(guess: str, secret: str) -> str:
 
 
 def input_guess(expected_len: int) -> str:
-    """prompts user for a guess of the expected length"""
+    """Prompts user for a guess of the expected length."""
     user_input: str = input(f"enter a {expected_len} character word: ")
     while len(user_input) != expected_len:
         user_input = input(f"That wasn't {expected_len} chars! Try again: ")
