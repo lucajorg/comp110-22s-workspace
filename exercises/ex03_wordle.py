@@ -46,7 +46,7 @@ def main() -> None:
     """The entrypoint of the program and main game loop."""
     n: int = 0
     secret_word_len: int = 5
-    secret_word: str = "codes"
+    secret_word: str = "pzazz"
     my_guess: str = ""
     won: bool = False
     while not won and n < 6:
